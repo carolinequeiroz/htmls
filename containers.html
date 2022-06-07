@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Containers</title>
+        <!--DIV, SECTION, SPAN-->
+<!--utilizado para css, mais um exemplo
+        <style>
+            sction{
+               border: solid 1px #000;
+            }
+        </style>-->
+       <!-- <style>
+            div {
+                
+               border: solid 1px #000;
+            }
+        </style> tem o mesmo comportamento das anteriores-->
+
+        <!--<style>
+            span {
+                
+               border: solid 1px #000;
+            }
+        </style> a tag span ela não presupõe que aquele elemento é um bloco de informações-->
+    <!--dica para organizar conteudos section e div dentro delas em blocos-->
+    
+    </head>
+    <body>
+        <ul>
+            <li><a href="inicial.html">Home</a></li>
+            <li><a href="estrutura.html">Base</a></li>
+            <li><a href="formatacao.html">Formatação</a></li>
+            <li><a href="lista.html">Listas</a></li>
+            <li><a href="iframes.html">Iframes</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+            <li><a href="tabelas.html">Tabelas</a></li>
+            <li><a href="#final">Tecla voltar</a></li>
+            <li><a href="comentarios.html">Comentarios <!--para entender o código--></a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+        
+        <!-- Formularios (de busca, de texto, de compras) inputs(entrada de dados) basicos (texto/text,senhas/password,bolinhas/radio,check/checkbox,textarea/textos maiores,arquivos/file) -->
+        <h1>Conteiners </h1>
+  
+         <hr></hr><!-- cria um traço e serve para separar duas areas dentro do html-->
+         <form action="/htmls/formulario.html" method="post">
+            
+            <br></br>
+            <label>Login:</label> 
+            <input placeholder="Insira seu nome ou e-mail" type="text"  name="none" class="" id="">
+            <br></br>
+            <label>Senha:</label><!--com o placeholder cria uma sugestão dentro do dado solicitado-->
+            <input placeholder="Insira sua senha de acesso" type="password" name="senha"/>
+            <br></br>
+            <label>Departamento:</label><!--com o placeholder cria uma sugestão dentro do dado solicitado-->
+            <input type="text" placeholder="Insira seu Departamento" name="departamento" list="list_departamentos" />
+           <datalist id="list_departamentos">
+                <option value="Arquitetura"/>
+                <option value="Front end"/>
+                <option value="Backend"/>
+                <option value="Designer"/>
+                <option value="Banco de dados"/>
+           </datalist> 
+            <br></br>
+            <label>Opcoes:</label>
+            <input type="radio"  name="opcao">A
+            <input type="radio"  name="opcao">B
+            <input type="radio"  name="opcao">C
+            <br></br>
+            <label>Multipla escolha</label> 
+            <input type="checkbox"  name="opcao">1
+            <input type="checkbox"  name="opcao">2
+            <input type="checkbox"  name="opcao">3
+            <br></br>
+            <label>Texto</label> 
+            <textarea name="texto" id="" cols="200" rows="10"></textarea>
+            <br></br>
+            <label>Arquivo</label>
+            <input type="file" name="arquivo" id="">
+            <br></br>
+            <label>Sexo</label>
+            <select name="sexo" id="">
+                <option value="Selection">Selection</option>
+                <option value="Femenino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+            </select>
+
+            <br></br>
+            <!--Formulários Select-->
+            <label>Marca de Carros</label>
+            <select name="carro" id="">
+                <optgroup label="Alemaes">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            <br></br>
+                <optgroup label="Suecos">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+            </select>
+
+            <!--Formulários Buttons(javascript) e Submits(submites a url)-->
+            <br></br>
+            <input type="button" value="Botao sem acao">
+            <input type="submit" value="Enviar"> 
+            <!--Formulário Auto complete e Planceholder-->
+            <!--<label>Departamento:</label> <input type="text" placeholder="Insira seu Departamento" name="departamento" list="list_departamentos" />
+            <datalist id="list_departamentos">
+                 <option value="Arquitetura"/>
+                 <option value="Front end"/>
+                 <option value="Backend"/>
+                 <option value="Designer"/>
+                 <option value="Banco de dados"/>
+            </datalist>-->
+            <br></br>
+            <!--Inputs especiais são os (color, date, e-mail, range, tel, search)-->
+            
+        </form>
+
+
+    </body>
+        <h3>roda pe do html na pagina</h3>
+</html>
